@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  }
+  body{
+    background-color: #deffdb;
+    
+  }
+  .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #deffdb;
+    margin: 0 auto;
+    padding: 0;
+    @import "./stylecomponets/header";
+    @import "./stylecomponets/main";
+    @import "./stylecomponets/footer";
+  }
+  
+  
+  
+  

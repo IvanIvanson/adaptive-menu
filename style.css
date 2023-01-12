@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #deffdb;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #deffdb;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container header .navbar {
+  width: 100%;
+  height: 80px;
+  background: #222;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container header .navbar .containers {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container header .navbar .containers .logo {
+  color: #fff;
+  font-size: 35px;
+  line-height: 35px;
+  text-decoration: none;
+}
+
+.container header .navbar .containers .logo span {
+  color: #2ff81c;
+}
+
+.container header .navbar .containers ul {
+  margin-bottom: 0;
+}
+
+.container header .navbar .containers ul li {
+  display: inline-block;
+  padding: 0px 10px;
+  border-radius: 3px;
+  margin-right: 30px;
+  list-style: none;
+}
+
+.container header .navbar .containers ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container header .navbar .containers ul li:hover,
+.container header .navbar .containers ul li:active {
+  background-color: #2ff81c;
+}
+
+.container header .navbar .containers #open-menu {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .container header .navbar .containers {
+    width: 100%;
+  }
+  .container header .navbar .containers .logo {
+    margin-left: 25px;
+  }
+  .container header .navbar .containers #open-menu {
+    display: block;
+  }
+  .container header .navbar .containers ul {
+    position: absolute;
+    top: -300%;
+    left: 0;
+    right: 0;
+    background: #222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    padding-bottom: 5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .container header .navbar .containers ul li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .container header .navbar .containers ul li:last-child {
+    border: none;
+  }
+  .container header .navbar .containers ul.active {
+    top: 100%;
+  }
+}
+
+.container main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container main .row {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container footer {
+  background-color: #1ed227;
+  min-height: 80px;
+}
+/*# sourceMappingURL=style.css.map */
